@@ -16,7 +16,7 @@ builder.Services.AddDbContext<TodoDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnection")));
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<ITodoService, TodoService>();
+builder.Services.AddScoped<ITodoItemService, TodoItemService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
