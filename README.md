@@ -32,8 +32,3 @@ CREATE TABLE [dbo].[TodoItem] (
 
 ```
 
-3. appsettings.json
-Copy connection string of tododb - from properties
-4. Scaffold - in Nuget Console
-Scaffold-DbContext "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=tododb;Integrated Security=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context TodoDbContext -UseDatabaseNames
-
